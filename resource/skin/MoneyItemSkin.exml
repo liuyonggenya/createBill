@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="MoneyItemSkin" width="640" height="42" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image id="imgIcon" source="jiaju_png" left="0" verticalCenter="0"/>
+	<e:Label id="lbTitle" text="居家生活" x="51" textColor="0x6c6b69" fontFamily="SimHei" verticalCenter="0"/>
+	<e:Label id="lbMoney" text="7,457.17" textColor="0x6C6B69" fontFamily="Microsoft JhengHei" right="4" verticalCenter="0" size="30"/>
+</e:Skin>

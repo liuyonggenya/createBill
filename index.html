@@ -23,6 +23,7 @@
 </head>
 
 <body>
+    <img src="" alt="" id="shareImage">
     <div style="margin: auto;width: 100%;height: 100%;" class="egret-player"
          data-entry-class="Main"
          data-orientation="auto"
@@ -51,6 +52,7 @@
         };
         loadNext();
     };
+
     var loadSingleScript = function (src, callback) {
         var s = document.createElement('script');
         s.async = false;
@@ -62,6 +64,7 @@
         }, false);
         document.body.appendChild(s);
     };
+
     var xhr = new XMLHttpRequest();
     xhr.open('GET', './manifest.json?v=' + Math.random(), true);
     xhr.addEventListener("load", function () {
@@ -91,4 +94,4 @@
 </script>
 </body>
 
-</html> 
+</html>

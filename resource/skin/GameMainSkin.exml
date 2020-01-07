@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="GameMainSkin" width="1920" height="1080" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Image source="bg2_jpg" horizontalCenter="0" width="1920" height="1080"/>
+	<e:Group id="xiaoguoGp" horizontalCenter="-0.5" bottom="72" scaleX="0.55" scaleY="0.55">
+		<e:Image source="zhangdan_jpg" x="0" y="0"/>
+		<e:Group y="566.14" horizontalCenter="0.5">
+			<e:Label id="lbAllCost" text="97,925.65" y="0" textColor="0x029aff" fontFamily="Microsoft YaHei" bold="true" size="55" x="0"/>
+			<e:Label text=" 元" y="0" textColor="0x029aff" fontFamily="Microsoft YaHei" bold="true" size="55" x="0"/>
+			<e:layout>
+				<e:HorizontalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:List id="list" width="648" height="254" x="104" y="768.14" anchorOffsetX="0" anchorOffsetY="0" itemRendererSkinName="MoneyItemSkin">
+			<e:layout>
+			<e:VerticalLayout gap="9"/>
+			</e:layout>
+		</e:List>
+		<e:Label id="lbHongbao" text="7,457.17" textColor="0x6C6B69" fontFamily="Microsoft JhengHei" size="30" y="1099.14" right="123"/>
+		<e:Label id="lbGongyi" text="10" textColor="0x6C6B69" fontFamily="Microsoft JhengHei" size="30" y="1248.14" right="154"/>
+		<e:Label text="次" textColor="0x6C6B69" fontFamily="SimHei" size="30" x="710" y="1248.14"/>
+		<e:Label id="lbTanpai" text="31.2kg" textColor="0x6C6B69" fontFamily="Microsoft JhengHei" size="30" y="1294.14" right="124"/>
+		<e:Label id="lbGuanjianci" text="满满正能量" fontFamily="SimHei" size="76" textColor="0x5a5859" y="1439.14" horizontalCenter="0"/>
+	</e:Group>
+	<e:Group id="setGp" width="100%" height="100%" bottom="0">
+		<e:Label text="支付宝账单生成器" y="48" fontFamily="SimHei" textColor="0x000000" size="52" horizontalCenter="0.5" bold="true"/>
+		<e:Group horizontalCenter="0.5" bottom="162">
+			<e:Group x="0" y="0">
+				<e:TextInput id="InputAllCost" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入总支出"/>
+				<e:Label text="总支出" x="2.5" y="9.5" fontFamily="SimHei" textColor="0x000000"/>
+			</e:Group>
+			<e:Label text="以下勾选5项，勾选的会显示在账单" x="186" y="38" fontFamily="SimHei" textColor="0x000000"/>
+			<e:Group x="0" y="74">
+				<e:TextInput id="inputJiaju" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbJiaju" label="居家生活" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="10" y="84">
+				<e:TextInput id="inputChihe" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbChihe" label="吃吃喝喝" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="20" y="94">
+				<e:TextInput id="inputJiaotong" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbJiaotong" label="交通出行" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="30" y="104">
+				<e:TextInput id="inputJiankang" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbJiankang" label="健康与养生" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="40" y="114">
+				<e:TextInput id="inputChuanyi" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbChuanyi" label="穿衣打扮" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="50" y="124">
+				<e:TextInput id="inputYule" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbYule" label="休闲娱乐" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="60" y="134">
+				<e:TextInput id="inputZhufang" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbZhufang" label="住房物业" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="70" y="144">
+				<e:TextInput id="inputXuexi" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbXuexi" label="学习与健身" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="80" y="154">
+				<e:TextInput id="inputKuaidi" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:CheckBox id="cbKuaidi" label="通讯快递" x="0" y="13"/>
+			</e:Group>
+			<e:Group x="10" y="10">
+				<e:TextInput id="inputHongbao" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="请输入金额"/>
+				<e:Label text="转账与红包" x="2.5" fontFamily="SimHei" size="24" verticalCenter="0" textColor="0x000000"/>
+			</e:Group>
+			<e:Group x="20" y="20">
+				<e:TextInput id="inputGongyi" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="输入捐献次数"/>
+				<e:Label text="公益捐献" x="2.5" fontFamily="SimHei" size="24" verticalCenter="0" textColor="0x000000"/>
+			</e:Group>
+			<e:Group x="30" y="30">
+				<e:TextInput id="inputTanpai" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="输入千克数"/>
+				<e:Label text="碳减排量至少" x="2.5" fontFamily="SimHei" size="22" verticalCenter="0" textColor="0x000000"/>
+			</e:Group>
+			<e:Group x="40" y="40">
+				<e:TextInput id="inputGuanjianci" width="350" height="49" x="139" y="0" anchorOffsetX="0" anchorOffsetY="0" prompt="关键词"/>
+				<e:Label text="年度关键词" x="2.5" fontFamily="SimHei" size="22" verticalCenter="0" textColor="0x000000"/>
+			</e:Group>
+			<e:layout>
+				<e:VerticalLayout/>
+			</e:layout>
+		</e:Group>
+		<e:Button id="btnCreate" label="生成账单" y="65" anchorOffsetX="0" width="256" anchorOffsetY="0" height="70" horizontalCenter="414"/>
+	</e:Group>
+	<e:Button id="btnReturn" label="返回修改" y="65" scaleX="1" scaleY="1" anchorOffsetX="0" width="256" anchorOffsetY="0" height="70" horizontalCenter="414"/>
+	<e:Button id="btnJieping" label="保存图片" y="150" scaleX="1" scaleY="1" anchorOffsetX="0" width="256" anchorOffsetY="0" height="70" horizontalCenter="414" visible="false"/>
+</e:Skin>
